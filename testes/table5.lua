@@ -1,10 +1,9 @@
 lista = {12, 54, 13, 1, -23}
 
-local removido = table.remove(lista, 1)
+table.sort(lista)
 
 for indice, valor in ipairs(lista) do
     print(indice, valor)
 end
 
-print("item removido: " .. removido)
-
+print(table.concat(lista, ", "))

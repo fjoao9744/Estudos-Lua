@@ -1,6 +1,6 @@
 lista = {}
 
--- Adiciona 5 itens
+-- Adiciona itens
 table.insert(lista, 12)
 table.insert(lista, 54)
 table.insert(lista, 13)
@@ -12,7 +12,7 @@ for chave, valor in pairs(lista) do
     
 end
 
--- Tira 2 itens
+-- Tira itens
 table.remove(lista, 1)
 table.remove(lista, 3)
 
