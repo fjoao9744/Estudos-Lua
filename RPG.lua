@@ -1,9 +1,12 @@
 math.randomseed(os.time())
 
-player = {
-    nome = "",
-    hp_max = math.floor(math.random() * 10) + 10,
-    hp = hp_max,
+Player = {
+    function Player:new(nome)
+        Player = {}
+        setmetatable(Player, self)
+        nome = nome,
+        hp_max = math.floor(math.random() * 10) + 10,
+        hp = hp_max,
     tomar_dano = function(self, dano)
         self.hp = self.hp - dano
         if self.hp - dano <= 0 then
@@ -100,3 +103,8 @@ dragon = {
     end
     
 }
+
+for c = 1, 10, 1 do
+    p = player
+    print(p.hp)
+end
