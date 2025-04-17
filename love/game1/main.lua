@@ -1,10 +1,3 @@
--- personagem
-player = {
-    x = 100,
-    y = 100,
-    speed = 200
-}
-
 function love.load()
 
 end
